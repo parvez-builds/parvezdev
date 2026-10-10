@@ -28,6 +28,28 @@ Regenerate the notes after editing any content:
 node scripts/build-notes.mjs
 ```
 
+## PDFs (download these)
+
+Ready-to-print PDFs live in [`pdf/`](./pdf):
+
+| File | Pages | What's in it |
+| --- | --- | --- |
+| [`Java-Interview-Crash-Course.pdf`](./pdf/Java-Interview-Crash-Course.pdf) | 187 | Everything — cover, contents, all 4 days, rapid fire |
+| [`day-1-core-java-the-language-again.pdf`](./pdf/day-1-core-java-the-language-again.pdf) | 36 | Core Java |
+| [`day-2-oop-collections-exceptions-generics.pdf`](./pdf/day-2-oop-collections-exceptions-generics.pdf) | 42 | OOP, Collections, Exceptions, Generics |
+| [`day-3-modern-java-streams-concurrency-jdbc-patterns.pdf`](./pdf/day-3-modern-java-streams-concurrency-jdbc-patterns.pdf) | 45 | Streams, concurrency, JDBC, patterns |
+| [`day-4-full-stack-spring-boot-jpa-rest-sql.pdf`](./pdf/day-4-full-stack-spring-boot-jpa-rest-sql.pdf) | 48 | Spring Boot, JPA, REST, SQL |
+| [`rapid-fire-rapid-fire-traps-hr-last-minute-drill.pdf`](./pdf/rapid-fire-rapid-fire-traps-hr-last-minute-drill.pdf) | 18 | Output traps, HR questions, final-24h plan |
+| [`cheat-sheet.pdf`](./pdf/cheat-sheet.pdf) | 6 | Every interview answer on one pass — read this the morning of |
+
+A4, real text (searchable and copyable), page numbers, code kept with its
+explanation. Rebuild with:
+
+```bash
+pip install markdown xhtml2pdf
+python3 scripts/build-pdf.py
+```
+
 ---
 
 ## The 4-day plan
